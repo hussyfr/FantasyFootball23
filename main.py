@@ -9,10 +9,10 @@ def main():
     
     #Creates dataFrames
     trainingData1 = cleanDF(createDF(2000, 2016))
-    trainingData2 = cleanDF(createDF(2017, 2020))
+    trainingData2 = cleanDF(createDF(2017, 2022))
     testingData = cleanDF(createDF(2016, 2017))
     trainingData = pd.concat([trainingData1, trainingData2])
-    useData = cleanDF(createDF(2020, 2020))
+    useData = cleanDF(createDF(2022, 2022))
     
     trainingData.to_csv('trainingData.csv')
     testingData.to_csv('testingData.csv')
@@ -43,10 +43,10 @@ def main():
     fullData.to_csv('predictedStats.csv')
     
     # creates positional csv files
-    qbStats.to_csv('21QbStats.csv')
-    rbStats.to_csv('21RbStats.csv')
-    wrStats.to_csv('21WrStats.csv')
-    teStats.to_csv('21TeStats.csv')
+    qbStats.to_csv('23QbStats.csv')
+    rbStats.to_csv('23RbStats.csv')
+    wrStats.to_csv('23WrStats.csv')
+    teStats.to_csv('23TeStats.csv')
     
     
     
